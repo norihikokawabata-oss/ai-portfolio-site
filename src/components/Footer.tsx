@@ -10,9 +10,18 @@ export function Footer() {
         fontSize: "14px",
       }}
     >
-      <p>norihikokawabata@gmail.com</p>
       <p>
-        <a href="https://github.com/norihikokawabata-oss" style={{ color: "var(--color-primary)" }}>
+        <a href="mailto:norihikokawabata@gmail.com" style={{ color: "var(--color-primary)" }}>
+          norihikokawabata@gmail.com
+        </a>
+      </p>
+      <p>
+        <a
+          href="https://github.com/norihikokawabata-oss"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "var(--color-primary)" }}
+        >
           GitHub
         </a>
       </p>
