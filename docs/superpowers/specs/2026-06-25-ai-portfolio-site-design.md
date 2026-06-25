@@ -82,6 +82,19 @@ interface Work {
 - スタイリング: CSS Modules または軽量な自前CSS(ベントーグリッドは `grid-template-columns/rows` で実装、追加ライブラリ不要)
 - 公開: `npm run deploy`(`gh-pages -d dist`)でGitHub Pages。新規リポジトリを作成(例: `norihikokawabata-oss/ai-portfolio-site`)
 
+### 配色・トンマナ(確定)
+
+[`docs/design-tokens/corporate-blue-clean.yaml`](../design-tokens/corporate-blue-clean.yaml)(`corporate-blue-clean-pastel`)を採用。
+業務改善レポート風スライドの配色を抽象化したパステル系トーン。
+
+- 背景: `#FAFBFF`(淡い青白) / カード背景: `#F0F4FC`
+- キーカラー: `#7C93D9`(パステルネイビー) / アクセント: `#93C5FD`(パステルブルー)
+- 強調テキスト色: `#1F2A44` 〜 `#283447`(彩度の高い背景でも視認性を保つため濃紺文字を使用)
+- 意味色: 改善・好調 `#86C99B` / 課題・低下 `#F0A8A8`
+- 角丸: medium、シャドウ: subtle、区切り線: hairline
+
+CSS変数として `src/styles/tokens.css` 等に上記YAMLの値をそのまま定義し、コンポーネントから参照する。
+
 ## 6. テスト・確認
 
 - レスポンシブ確認(PC幅・モバイル幅でベントーグリッドが崩れないか)

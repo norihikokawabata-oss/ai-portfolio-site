@@ -1,0 +1,72 @@
+# 抽象化デザイントークン: "Corporate Blue Clean (Pastel)"
+# 出典: 業務改善レポート風スライドデザイン(配色・雰囲気のみを抽出。文言・レイアウトは対象外)
+# 用途: 配色とムードのプリセットとして、別サイト・別ドキュメントにも流用可能
+
+style_name: corporate-blue-clean-pastel
+
+mood:
+  keywords: [信頼感, 誠実, 整然, データドリブン, ビジネスフォーマル, クリーン, やわらかい]
+  description: >
+    白〜淡い青みの背景に、彩度を抑えたパステルブルーを効かせた、
+    企業のレポート・提案書にも使えるやわらかく親しみやすい印象。
+    紺一色の重さを避け、淡いトーンで「信頼感」と「柔らかさ」を両立する。
+    余白を広く取り、要素ごとの境界がはっきりしており「整理されている」感覚を与える。
+  formality: medium-high  # low | medium | medium-high | high
+  energy: low             # low | medium | high (静かで落ち着いた雰囲気)
+  warmth: neutral-cool    # warm | neutral | neutral-cool | cool
+
+color_palette:
+  base:
+    background: "#FAFBFF"          # メイン背景はごく淡い青白
+    surface: "#F0F4FC"             # カード/セクション背景(淡いブルーグレー)
+    surface_alt: "#E6ECFA"         # 強調したいカード背景
+  primary:
+    main: "#7C93D9"                 # パステルネイビー(見出し背景・キーカラー、彩度を落とした紺)
+    on_primary: "#1F2A44"           # primary上のテキスト色(白文字は彩度低下で視認性が落ちるため濃紺文字を使用)
+  accent:
+    main: "#93C5FD"                 # パステルブルー(アイコン・リンク・強調数字)
+    soft: "#E0ECFB"                 # さらに薄い青(バッジ背景・選択状態)
+  text:
+    heading: "#283447"              # 濃紺寄りのダークグレー(黒は使わず柔らかさを残す)
+    body: "#4B5868"                 # 本文用ミッドグレー
+    muted: "#7C8798"                # 補足・キャプション用
+  semantic:
+    positive: "#86C99B"             # パステルグリーン(改善・上昇)
+    negative: "#F0A8A8"             # パステルレッド/コーラル(課題・下降)
+    neutral_metric: "#7C93D9"       # 中立的な数値強調
+  border:
+    default: "#E1E7F2"              # カード境界線・区切り線
+  contrast_ratio_note: >
+    パステル系は彩度・明度が高くコントラストが不足しやすいため、
+    primary.main や accent.main を背景に使う場合は on_primary のような濃色文字を使うこと。
+    本文・見出しの文字色(text.*)はAA(4.5:1)以上を維持する濃さに留める。
+
+typography:
+  font_mood: "ゴシック系・人間味を抑えたニュートラルなサンセリフ"
+  heading_weight: bold
+  body_weight: regular
+  letter_density: normal           # 行間・字間に余裕を持たせる(詰め過ぎない)
+  hierarchy_contrast: high          # 見出しと本文のサイズ差を大きく取り、階層を明確化
+
+surfaces_and_shape:
+  corner_radius: medium             # 角は丸めるが、丸すぎない(8-12px相当の印象)
+  elevation: subtle                 # ドロップシャドウは控えめ、フラットに近い
+  card_density: medium              # 1カードあたりの情報量は中程度、詰め込まない
+  dividers: hairline                # セクション区切りは細い1pxライン中心
+
+iconography:
+  style: filled_circle_monochrome   # 単色の塗りアイコンを丸背景に乗せる
+  icon_color_on_accent: true        # アイコン自体はprimary.on_primary、背景はaccent系
+  numbering_style: circular_badge   # 手順や項目番号は円形バッジで表現
+
+motion_and_emphasis:
+  emphasis_method: color_and_weight # アニメーションでなく色とフォント太さで強調
+  data_emphasis: >
+    数値の変化(Before/After、増減)は色(positive/negative)+矢印アイコンで表現し、
+    派手なグラフィックよりも「表+色」のシンプルな対比を優先する。
+
+reusability_notes: >
+  本トークンは配色・タイポグラフィの雰囲気・形状の角丸感・強調手法のみを定義したものであり、
+  グリッド構成・コンポーネント配置・具体的な文言には依存しない。
+  別ドメインのサイト(例: ダッシュボード、LP、ポートフォリオ等)に適用する際は、
+  color_palette と mood の値をそのままCSS変数/デザイントークンとして読み替えて利用できる。
