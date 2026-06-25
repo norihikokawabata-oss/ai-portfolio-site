@@ -16,3 +16,26 @@ body {
   margin: 0 auto;
   padding: 24px 16px 64px;
 }
+
+@media (max-width: 640px) {
+  .page {
+    padding: 16px 12px 48px;
+  }
+}
+
+.hero-bento {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  height: 360px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  .hero-bento {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 160px);
+    height: auto;
+  }
+}

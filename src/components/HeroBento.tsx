@@ -10,16 +10,7 @@ export function HeroBento({ heroWorks, onSelect }: HeroBentoProps) {
   const [main, ...sub] = heroWorks;
 
   return (
-    <section
-      style={{
-        display: "grid",
-        gridTemplateColumns: "2fr 1fr 1fr",
-        gridTemplateRows: "1fr 1fr",
-        gap: "12px",
-        height: "360px",
-        marginBottom: "40px",
-      }}
-    >
+    <section className="hero-bento">
       <div style={{ gridRow: "span 2" }}>
         <WorkCard work={main} onSelect={onSelect} variant="hero-main" />
       </div>
