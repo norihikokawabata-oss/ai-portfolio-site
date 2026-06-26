@@ -43,14 +43,12 @@ export function WorksGallery({ works, onSelect }: WorksGalleryProps) {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
-          gap: "12px",
+          gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
+          gap: "16px",
         }}
       >
         {visibleWorks.map((work) => (
-          <div key={work.id} style={{ height: "140px" }}>
-            <WorkCard work={work} onSelect={onSelect} variant="grid" />
-          </div>
+          <WorkCard key={work.id} work={work} onSelect={onSelect} variant="grid" />
         ))}
       </div>
     </section>
