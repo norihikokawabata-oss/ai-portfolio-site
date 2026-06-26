@@ -6,11 +6,6 @@ describe("works data", () => {
     expect(works).toHaveLength(10);
   });
 
-  it("has exactly 5 hero works", () => {
-    const heroWorks = works.filter((w) => w.isHero);
-    expect(heroWorks).toHaveLength(5);
-  });
-
   it("has exactly 6 business-category works and 4 knowhow-category works", () => {
     const business = works.filter((w) => w.category === "business");
     const knowhow = works.filter((w) => w.category === "knowhow");
@@ -28,6 +23,12 @@ describe("works data", () => {
       expect(w.title.length).toBeGreaterThan(0);
       expect(w.thumbnail.length).toBeGreaterThan(0);
       expect(w.description.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("every work has at least one tag", () => {
+    for (const w of works) {
+      expect(w.tags.length).toBeGreaterThan(0);
     }
   });
 });

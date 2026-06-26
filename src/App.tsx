@@ -1,25 +1,22 @@
-import { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
-import { HeroBento } from "./components/HeroBento";
-import { WorksGallery } from "./components/WorksGallery";
-import { WorkModal } from "./components/WorkModal";
+import { Hero } from "./components/Hero";
+import { About } from "./components/About";
+import { Works } from "./components/Works";
+import { Skills } from "./components/Skills";
+import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { works, type Work } from "./data/works";
-
-const heroWorks = works.filter((w) => w.isHero);
-const galleryWorks = works.filter((w) => !w.isHero);
 
 function App() {
-  const [selectedWork, setSelectedWork] = useState<Work | null>(null);
-
   return (
     <div className="page">
       <Header />
-      <HeroBento heroWorks={heroWorks} onSelect={setSelectedWork} />
-      <WorksGallery works={galleryWorks} onSelect={setSelectedWork} />
+      <Hero />
+      <About />
+      <Works />
+      <Skills />
+      <Contact />
       <Footer />
-      <WorkModal work={selectedWork} onClose={() => setSelectedWork(null)} />
     </div>
   );
 }

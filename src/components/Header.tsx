@@ -1,19 +1,19 @@
 export function Header() {
   return (
-    <header
-      style={{
-        textAlign: "center",
-        padding: "32px 0 24px",
-        borderBottom: "1px solid var(--color-border)",
-        marginBottom: "32px",
-      }}
-    >
-      <h1 style={{ color: "var(--color-text-heading)", margin: 0, fontSize: "28px" }}>
-        ばたやん
-      </h1>
-      <p style={{ color: "var(--color-text-muted)", marginTop: "8px" }}>
-        Claude Codeで業務AI活用
-      </p>
+    <header className="site-header">
+      <div className="site-header-inner">
+        <a href="#hero" className="site-logo">
+          ばたやん<span>.</span>
+        </a>
+        <nav className="site-nav">
+          <a href="#about">ABOUT</a>
+          <a href="#works">WORKS</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#contact" className="cta">
+            CONTACT
+          </a>
+        </nav>
+      </div>
     </header>
   );
 }
