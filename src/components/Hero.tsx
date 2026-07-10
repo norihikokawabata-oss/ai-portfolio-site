@@ -29,8 +29,8 @@ export function Hero() {
         </div>
       </div>
       <img src={heroIllustration} alt="" className="hero-illustration" aria-hidden="true" decoding="async" />
-      <div className="hero-watermark">PORTFOLIO</div>
-      <div className="scroll-indicator">SCROLL</div>
+      <div className="hero-watermark" aria-hidden="true">PORTFOLIO</div>
+      <div className="scroll-indicator" aria-hidden="true">SCROLL</div>
     </section>
   );
 }
