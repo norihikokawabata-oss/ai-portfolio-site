@@ -1,9 +1,13 @@
+import type { CSSProperties } from "react";
 import heroIllustration from "../assets/hero-illustration.webp";
 
 export function Hero() {
   return (
-    <section id="hero" className="hero">
-      <img src={heroIllustration} alt="" className="hero-bg-illustration" aria-hidden="true" decoding="async" />
+    <section
+      id="hero"
+      className="hero"
+      style={{ "--hero-bg": `url(${heroIllustration})` } as CSSProperties}
+    >
       <div className="hero-content">
         <div className="hero-label">AI DEVELOPER</div>
         <h1 className="hero-title">

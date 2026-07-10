@@ -12,7 +12,14 @@ export function WorkBlock({ work, index }: WorkBlockProps) {
   return (
     <div className={`work-block${reverse ? " reverse" : ""}`}>
       <div className="work-media">
-        <img src={work.thumbnail} alt={work.title} loading="lazy" decoding="async" />
+        <img
+          src={work.thumbnail}
+          alt={work.title}
+          width={work.width}
+          height={work.height}
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       <div className="work-info">
         <div className="work-meta">
