@@ -1,25 +1,26 @@
 :root {
-  /* surfaces */
-  --color-ink: #0a0a0a;
-  --color-ink-soft: #141414;
-  --color-paper: #ffffff;
-  --color-paper-soft: #f4f5f7;
+  /* surfaces — yaml: corporate-blue-clean-pastel (light) */
+  --color-ink: #e6ecfa;        /* 旧・濃色セクション → 淡いブルーグレー surface_alt */
+  --color-ink-soft: #d5def3;   /* ウォーターマーク等のトーンオントーン */
+  --color-paper: #fafbff;      /* メイン背景（淡い青白） */
+  --color-paper-soft: #f0f4fc; /* カード/セクション背景 */
 
   /* text */
-  --color-text-on-dark: #ffffff;
-  --color-text-on-dark-muted: #8b8f98;
-  --color-text-on-light: #0a0a0a;
-  --color-text-on-light-muted: #5b6270;
+  --color-text-on-dark: #283447;       /* パステル面上の見出し（濃紺グレー） */
+  --color-text-on-dark-muted: #4b5868; /* パステル面上の本文/補足 */
+  --color-text-on-light: #283447;
+  --color-text-on-light-muted: #7c8798;
 
   /* accent */
-  --color-accent: #2f5fe0;
-  --color-accent-soft: rgba(47, 95, 224, 0.12);
+  --color-accent: #7c93d9;                    /* primary パステルネイビー */
+  --color-accent-soft: rgba(124, 147, 217, 0.14);
+  --color-on-accent: #1f2a44;                 /* accent面上の文字（yaml on_primary・AA確保） */
 
   /* border */
-  --color-border-dark: rgba(255, 255, 255, 0.12);
-  --color-border-light: #e3e5ea;
+  --color-border-dark: #cdd8ee;  /* パステル面上のヘアライン境界 */
+  --color-border-light: #e1e7f2; /* 明色面の境界（yaml border.default） */
 
   /* shape */
   --radius-md: 10px;
-  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-subtle: 0 1px 3px rgba(31, 42, 68, 0.08);
 }

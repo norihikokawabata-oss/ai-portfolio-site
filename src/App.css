@@ -208,7 +208,7 @@ body {
 
 .btn-primary {
   background: var(--color-accent);
-  color: #fff;
+  color: var(--color-on-accent);
 }
 
 .btn-outline-dark {
