@@ -42,7 +42,7 @@ body {
 }
 
 .site-logo span {
-  color: var(--color-accent);
+  color: var(--color-accent-text);
 }
 
 .site-nav {
@@ -157,7 +157,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--color-accent);
+  color: var(--color-accent-text);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -282,7 +282,7 @@ body {
 }
 
 .about-stat .num span {
-  color: var(--color-accent);
+  color: var(--color-accent-text);
 }
 
 .about-stat .label {
@@ -317,7 +317,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--color-accent);
+  color: var(--color-accent-text);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -445,7 +445,7 @@ body {
 .skills-col h3 {
   font-size: 12px;
   letter-spacing: 0.08em;
-  color: var(--color-accent);
+  color: var(--color-accent-text);
   font-weight: 700;
   border-bottom: 1px solid var(--color-border-light);
   padding-bottom: 10px;
@@ -528,7 +528,7 @@ body {
 .contact-link .label {
   font-size: 11px;
   letter-spacing: 0.08em;
-  color: var(--color-accent);
+  color: var(--color-accent-text);
   margin-bottom: 4px;
 }
 

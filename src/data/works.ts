@@ -1,13 +1,13 @@
-import financialDashboard from "../assets/works/financial-dashboard.png";
-import mbtiDiagnosis from "../assets/works/mbti-diagnosis.png";
-import mbtiTeamBuilder from "../assets/works/mbti-team-builder.png";
-import tetris from "../assets/works/tetris.png";
-import homepageLp from "../assets/works/homepage-lp.png";
-import managementStrategy from "../assets/works/management-strategy.png";
-import skillCreation from "../assets/works/skill-creation.png";
-import subagentDriven from "../assets/works/subagent-driven.png";
-import extensionsUsage from "../assets/works/extensions-usage.png";
-import claudeInChrome from "../assets/works/claude-in-chrome.png";
+import financialDashboard from "../assets/works/financial-dashboard.webp";
+import mbtiDiagnosis from "../assets/works/mbti-diagnosis.webp";
+import mbtiTeamBuilder from "../assets/works/mbti-team-builder.webp";
+import tetris from "../assets/works/tetris.webp";
+import homepageLp from "../assets/works/homepage-lp.webp";
+import managementStrategy from "../assets/works/management-strategy.webp";
+import skillCreation from "../assets/works/skill-creation.webp";
+import subagentDriven from "../assets/works/subagent-driven.webp";
+import extensionsUsage from "../assets/works/extensions-usage.webp";
+import claudeInChrome from "../assets/works/claude-in-chrome.webp";
 
 export type WorkCategory = "business" | "knowhow";
 

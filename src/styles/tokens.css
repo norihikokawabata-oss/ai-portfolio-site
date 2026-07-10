@@ -9,12 +9,13 @@
   --color-text-on-dark: #283447;       /* パステル面上の見出し（濃紺グレー） */
   --color-text-on-dark-muted: #4b5868; /* パステル面上の本文/補足 */
   --color-text-on-light: #283447;
-  --color-text-on-light-muted: #7c8798;
+  --color-text-on-light-muted: #666f80; /* 明色面の補足テキスト（paper 4.89でAA合格・旧#7c8798は3.52でNG） */
 
   /* accent */
   --color-accent: #7c93d9;                    /* primary パステルネイビー */
   --color-accent-soft: rgba(124, 147, 217, 0.14);
   --color-on-accent: #1f2a44;                 /* accent面上の文字（yaml on_primary・AA確保） */
+  --color-accent-text: #4a5eb5;               /* 文字用の濃いアクセント（paper5.71/ink4.98でAA合格）。装飾線/背景は--color-accentのまま */
 
   /* border */
   --color-border-dark: #cdd8ee;  /* パステル面上のヘアライン境界 */
