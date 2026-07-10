@@ -1,4 +1,4 @@
-import heroIllustration from "../assets/hero-illustration.png";
+import heroIllustration from "../assets/hero-illustration.webp";
 
 export function Hero() {
   return (
