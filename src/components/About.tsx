@@ -1,8 +1,9 @@
 import { works } from "../data/works";
+import { SITE_YEAR } from "../data/site";
+
+const categoryCount = new Set(works.map((w) => w.category)).size;
 
 export function About() {
-  const categoryCount = new Set(works.map((w) => w.category)).size;
-
   return (
     <section id="about" className="about">
       <div className="section-inner">
@@ -30,7 +31,7 @@ export function About() {
               <div className="label">CATEGORIES</div>
             </div>
             <div className="about-stat">
-              <div className="num">2026</div>
+              <div className="num">{SITE_YEAR}</div>
               <div className="label">ACTIVE</div>
             </div>
           </div>
